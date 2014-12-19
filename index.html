@@ -303,12 +303,12 @@ window.onload = function() {
 				install.addEventListener('click', function(){
 					var request = window.navigator.mozApps.installPackage(manifest_url);
 					request.onerror = function(){
-						alert('Error: '+ this.error.name);
+						//alert('Error: '+ this.error.name);
 					}
 				});
 		};
 		request.onerror = function() {
-				alert('Error: '+ this.error.name);
+				//alert('Error: '+ this.error.name);
 		}
 	}
 	
@@ -330,7 +330,7 @@ window.onload = function() {
 				languageSelect.style = 'font-size: '+(height /languageNo /2) +'px';
 		}
 		
-		if (install) {
+		if (install && false) {
 				if (typeof languageSelect.style['font-size'] != 'undefined') {
 						install.style['font-size'] = (height /languageNo /2) +'px';
 				}
