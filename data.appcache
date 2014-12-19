@@ -1,10 +1,11 @@
 CACHE MANIFEST
 
-# 1.5.0
-# 17
+# 1.5.1
+# 1
 
 CACHE:
 index.html
+disegno.svg
 
 NETWORK:
 *
