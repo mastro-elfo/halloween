@@ -143,6 +143,7 @@ li:hover {
   right: 1em;
   text-align: right;
   font-size: 0;
+  cursor: pointer;
 }
 		</style>
 		<script type="text/javascript">
@@ -295,7 +296,7 @@ window.onload = function() {
 	
 	var install = null;
 	var manifest_url = 'http://mastro-elfo.github.io/halloween/mini-manifest.webapp';
-	// manifest_url = 'http://127.0.0.1/halloween/mini-manifest.webapp';
+	manifest_url = 'http://127.0.0.2/halloween/mini-manifest.webapp';
 	if (window.navigator && window.navigator.mozApps) {
 		var request = window.navigator.mozApps.checkInstalled(manifest_url);
 		request.onsuccess = function() {
@@ -303,12 +304,12 @@ window.onload = function() {
 				install.addEventListener('click', function(){
 					var request = window.navigator.mozApps.installPackage(manifest_url);
 					request.onerror = function(){
-						//alert('Error: '+ this.error.name);
+						alert('Error: '+ this.error.name);
 					}
 				});
 		};
 		request.onerror = function() {
-				//alert('Error: '+ this.error.name);
+				alert('Error: '+ this.error.name);
 		}
 	}
 	
@@ -330,7 +331,7 @@ window.onload = function() {
 				languageSelect.style = 'font-size: '+(height /languageNo /2) +'px';
 		}
 		
-		if (install && false) {
+		if (install) {
 				if (typeof languageSelect.style['font-size'] != 'undefined') {
 						install.style['font-size'] = (height /languageNo /2) +'px';
 				}
