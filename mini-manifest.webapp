@@ -2,7 +2,7 @@
 	"name": "Halloween",
 	"version": "1.5",
 	"description": "How many days to next Halloween?",
-	"package_path": "/halloween/pack.zip",
+	"package_path": "/halloween/package.zip",
 	"developer": {
 		"name": "Francesco Michienzi",
 		"url": "http://mastro-elfo.github.io"

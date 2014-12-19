@@ -294,18 +294,21 @@ window.onload = function() {
 	var languageNo = languagesLI.length -1;
 	
 	var install = null;
-	var manifest_url = 'http://mastro-elfo.github.io/halloween/manifest.webapp';
-	// manifest_url = 'http://127.0.0.1/halloween/manifest.webapp';
+	var manifest_url = 'http://mastro-elfo.github.io/halloween/mini-manifest.webapp';
+	// manifest_url = 'http://127.0.0.1/halloween/mini-manifest.webapp';
 	if (window.navigator && window.navigator.mozApps) {
 		var request = window.navigator.mozApps.checkInstalled(manifest_url);
 		request.onsuccess = function() {
 				install = document.getElementById('install');
 				install.addEventListener('click', function(){
-					window.navigator.mozApps.install(manifest_url);
+					var request = window.navigator.mozApps.installPackage(manifest_url);
+					request.onerror = function(){
+						alert('Error: '+ this.error.name);
+					}
 				});
 		};
 		request.onerror = function() {
-				// alert('Error: '+ this.error.name)
+				alert('Error: '+ this.error.name);
 		}
 	}
 	
