@@ -4,10 +4,11 @@ function translate(language) {
 	var selectLanguage = document.getElementById('select-open');
 	var selectDefault = document.getElementById('select-default');
 	var installBtn = document.getElementById('install');
-	// language = language? language : (navigator.language || navigator.userLanguage);
-	language = language || localStorage['language'] || navigator.language || navigator.userLanguage;
+	
+	language = (language == '--') ? (navigator.language || navigator.userLanguage) : (language || localStorage['language'] || navigator.language || navigator.userLanguage);
+	
 	localStorage['language'] = language;
-	// language = 'de';
+	
 	switch (language.substring(0, 2)) {
 		case 'da':
 				daysToNext.innerHTML = 'dage til næste '+halloween;
