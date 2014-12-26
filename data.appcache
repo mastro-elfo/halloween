@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# 1.6.0
+# 1.6.1
 # 1
 
 CACHE:
@@ -9,6 +9,10 @@ index.html
 img/pumpkin.svg
 img/pumpkin-512.png
 img/pumpkin-256.png
+img/pumpkin-128.png
+img/pumpkin-90.png
+img/pumpkin-64.png
+img/pumpkin-60.png
 img/pumpkin-32.png
 img/pumpkin-16.png
 
