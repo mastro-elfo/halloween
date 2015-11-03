@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html manifest="manifest.appcache">
+<!--<html>-->
 	<head>
 		<meta charset="UTF-8"/>
 		<meta name=viewport content="width=device-width, initial-scale=1"/>
-		<script type="text/javascript" src="js/halloween.js" async="async" defer="defer"></script>
+		<title></title>
 	</head>
 	<body>
 		<ul id="language-select">
@@ -25,6 +26,24 @@
 			<li data-lang="ru">pусский</li>
 			<li data-lang="sv">Svensk</li>
 		</ul>
+		<ul id="settings">
+			<!--<li onlick="location.href = '#settings-select';">&#9881;</li>
+			<li>
+				<div data-bg="default"></div>
+			</li>
+			<li>
+				<div data-bg="btr"></div>
+			</li>
+			<li>
+				<div data-bg="default"></div>
+			</li>
+			<li>
+				<div data-bg="default"></div>
+			</li>-->
+		</ul>
+		<ul id="share">
+			<li id="share-facebook">share</li>
+		</ul>
 		<!--<div id="install">Install</div>-->
 		<div id="maincontainer">
 			<div id="loader"></div>
@@ -41,3 +60,4 @@
 </html>
 <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
 <link rel="stylesheet" href="css/halloween.css"/>
+<script type="text/javascript" src="js/halloween.js" async="async" defer="defer"></script>

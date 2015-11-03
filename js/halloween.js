@@ -1,117 +1,6 @@
 var halloween = '<em>Halloween</em>';
-function translate(language) {
-	var daysToNext = document.getElementById('days-to-next');
-	var selectLanguage = document.getElementById('select-open');
-	var selectDefault = document.getElementById('select-default');
-	// var installBtn = document.getElementById('install');
-	
-	language = (language == '--') ? (navigator.language || navigator.userLanguage) : (language || localStorage['language'] || navigator.language || navigator.userLanguage);
-	
-	localStorage['language'] = language;
-	
-	switch (language.substring(0, 2)) {
-		case 'da':
-				daysToNext.innerHTML = 'dage til næste '+halloween;
-				selectDefault.innerHTML = 'Standard';
-				selectLanguage.innerHTML = 'Vælg';
-				// installBtn.innerHTML = 'Installere';
-				break;
-		case 'de':
-				daysToNext.innerHTML = 'Tage zum nächsten '+halloween;
-				selectDefault.innerHTML = 'Default';
-				selectLanguage.innerHTML = 'Wählen';
-				// installBtn.innerHTML = 'Installiere';
-				break;
-		case 'en':
-				daysToNext.innerHTML = 'days to next '+halloween;
-				selectDefault.innerHTML = 'Default';
-				selectLanguage.innerHTML = 'Select';
-				// installBtn.innerHTML = 'Install';
-				break;
-		case 'eo':
-				daysToNext.innerHTML = 'tagojn por la proksima '+halloween;
-				selectDefault.innerHTML = 'Implicite';
-				selectLanguage.innerHTML = 'Elekti';
-				// installBtn.innerHTML = 'Instali';
-				break;
-		case 'es':
-				daysToNext.innerHTML = 'días hasta la siguiente de '+halloween;
-				selectDefault.innerHTML = 'Seleccionar';
-				selectLanguage.innerHTML = 'Defecto';
-				// installBtn.innerHTML = 'Instalar';
-				break;
-		case 'fi':
-				daysToNext.innerHTML = 'päivää seuraavaan '+halloween;
-				selectDefault.innerHTML = 'Oletusarvo';
-				selectLanguage.innerHTML = 'Valita';
-				// installBtn.innerHTML = 'Asentaa';
-				break;
-		case 'fr':
-				daysToNext.innerHTML = 'jours à '+halloween+' prochaine';
-				selectDefault.innerHTML = 'Défaut';
-				selectLanguage.innerHTML = 'Sélectionner';
-				// installBtn.innerHTML = 'Installer';
-				break;
-		case 'gr':
-				daysToNext.innerHTML = 'Ημέρες στο επόμενο '+halloween;
-				selectDefault.innerHTML = 'Προεπιλογή';
-				selectLanguage.innerHTML = 'Επιλέξτε';
-				// installBtn.innerHTML = 'Εγκατάσταση';
-				break;
-		case 'is':
-				daysToNext.innerHTML = 'dagar til næsta ' +halloween;
-				selectDefault.innerHTML = 'Sjálfgefið';
-				selectLanguage.innerHTML = 'Velja';
-				// installBtn.innerHTML = 'Setja';
-				break;
-		case 'it':
-				daysToNext.innerHTML = 'giorni al prossimo '+halloween;
-				selectDefault.innerHTML = 'Predefinito';
-				selectLanguage.innerHTML = 'Seleziona';
-				// installBtn.innerHTML = 'Installare';
-				break;
-		case 'nl':
-				daysToNext.innerHTML = 'dagen tot de volgende '+halloween;
-				selectDefault.innerHTML = 'Kiezen';
-				selectLanguage.innerHTML = 'Verzuim';
-				// installBtn.innerHTML = 'Installeren';
-				break;
-		case 'no':
-				daysToNext.innerHTML = 'dager til neste '+halloween;
-				selectDefault.innerHTML = 'Standard';
-				selectLanguage.innerHTML = 'Velg';
-				// installBtn.innerHTML = 'Installere';
-				break;
-		case 'pt':
-				daysToNext.innerHTML = 'dias para o próximo '+halloween;
-				selectDefault.innerHTML = 'Omissão';
-				selectLanguage.innerHTML = 'Selecionar';
-				// installBtn.innerHTML = 'Instalar';
-				break;
-		case 'ru':
-				daysToNext.innerHTML = 'Дней до следующего '+halloween.replace('Halloween', 'Хэллоуина');
-				selectDefault.innerHTML = 'дефолт';
-				selectLanguage.innerHTML = 'выбрать';
-				// installBtn.innerHTML = 'устанавливать';
-				break;
-		case 'sv':
-				daysToNext.innerHTML = 'dagar till nästa '+halloween;
-				selectDefault.innerHTML = 'Standard';
-				selectLanguage.innerHTML = 'Välj';
-				// installBtn.innerHTML = 'Installera';
-				break;
-		default:
-				daysToNext.innerHTML = 'days to next '+halloween;
-				selectDefault.innerHTML = 'Default';
-				selectLanguage.innerHTML = 'Select';
-				// installBtn.innerHTML = 'Install';
-				break;
-	}
-}
 
 window.onload = function() {
-	translate();
-	
 	var h = document.getElementById('h-day');
 	var d = document.getElementById('d-day');
 	var u = document.getElementById('u-day');
@@ -139,8 +28,122 @@ window.onload = function() {
 		h.innerHTML = hh;
 		d.innerHTML = dd;
 		u.innerHTML = uu;
+		
+		document.title = '' + hh + dd + uu + ' ' + document.getElementById('days-to-next').innerHTML.replace('<em>', '').replace('</em>', '');
 	}
 	
+	function translate(language) {
+		var daysToNext = document.getElementById('days-to-next');
+		var selectLanguage = document.getElementById('select-open');
+		var selectDefault = document.getElementById('select-default');
+		// var installBtn = document.getElementById('install');
+		
+		language = (language == '--') ? (navigator.language || navigator.userLanguage) : (language || localStorage['language'] || navigator.language || navigator.userLanguage);
+		
+		localStorage['language'] = language;
+		
+		switch (language.substring(0, 2)) {
+			case 'da':
+					daysToNext.innerHTML = 'dage til næste '+halloween;
+					selectDefault.innerHTML = 'Standard';
+					selectLanguage.innerHTML = 'Vælg';
+					// installBtn.innerHTML = 'Installere';
+					break;
+			case 'de':
+					daysToNext.innerHTML = 'Tage zum nächsten '+halloween;
+					selectDefault.innerHTML = 'Default';
+					selectLanguage.innerHTML = 'Wählen';
+					// installBtn.innerHTML = 'Installiere';
+					break;
+			case 'en':
+					daysToNext.innerHTML = 'days to next '+halloween;
+					selectDefault.innerHTML = 'Default';
+					selectLanguage.innerHTML = 'Select';
+					// installBtn.innerHTML = 'Install';
+					break;
+			case 'eo':
+					daysToNext.innerHTML = 'tagojn por la proksima '+halloween;
+					selectDefault.innerHTML = 'Implicite';
+					selectLanguage.innerHTML = 'Elekti';
+					// installBtn.innerHTML = 'Instali';
+					break;
+			case 'es':
+					daysToNext.innerHTML = 'días hasta la siguiente de '+halloween;
+					selectDefault.innerHTML = 'Seleccionar';
+					selectLanguage.innerHTML = 'Defecto';
+					// installBtn.innerHTML = 'Instalar';
+					break;
+			case 'fi':
+					daysToNext.innerHTML = 'päivää seuraavaan '+halloween;
+					selectDefault.innerHTML = 'Oletusarvo';
+					selectLanguage.innerHTML = 'Valita';
+					// installBtn.innerHTML = 'Asentaa';
+					break;
+			case 'fr':
+					daysToNext.innerHTML = 'jours à '+halloween+' prochaine';
+					selectDefault.innerHTML = 'Défaut';
+					selectLanguage.innerHTML = 'Sélectionner';
+					// installBtn.innerHTML = 'Installer';
+					break;
+			case 'gr':
+					daysToNext.innerHTML = 'Ημέρες στο επόμενο '+halloween;
+					selectDefault.innerHTML = 'Προεπιλογή';
+					selectLanguage.innerHTML = 'Επιλέξτε';
+					// installBtn.innerHTML = 'Εγκατάσταση';
+					break;
+			case 'is':
+					daysToNext.innerHTML = 'dagar til næsta ' +halloween;
+					selectDefault.innerHTML = 'Sjálfgefið';
+					selectLanguage.innerHTML = 'Velja';
+					// installBtn.innerHTML = 'Setja';
+					break;
+			case 'it':
+					daysToNext.innerHTML = 'giorni al prossimo '+halloween;
+					selectDefault.innerHTML = 'Predefinito';
+					selectLanguage.innerHTML = 'Seleziona';
+					// installBtn.innerHTML = 'Installare';
+					break;
+			case 'nl':
+					daysToNext.innerHTML = 'dagen tot de volgende '+halloween;
+					selectDefault.innerHTML = 'Kiezen';
+					selectLanguage.innerHTML = 'Verzuim';
+					// installBtn.innerHTML = 'Installeren';
+					break;
+			case 'no':
+					daysToNext.innerHTML = 'dager til neste '+halloween;
+					selectDefault.innerHTML = 'Standard';
+					selectLanguage.innerHTML = 'Velg';
+					// installBtn.innerHTML = 'Installere';
+					break;
+			case 'pt':
+					daysToNext.innerHTML = 'dias para o próximo '+halloween;
+					selectDefault.innerHTML = 'Omissão';
+					selectLanguage.innerHTML = 'Selecionar';
+					// installBtn.innerHTML = 'Instalar';
+					break;
+			case 'ru':
+					daysToNext.innerHTML = 'Дней до следующего '+halloween.replace('Halloween', 'Хэллоуина');
+					selectDefault.innerHTML = 'дефолт';
+					selectLanguage.innerHTML = 'выбрать';
+					// installBtn.innerHTML = 'устанавливать';
+					break;
+			case 'sv':
+					daysToNext.innerHTML = 'dagar till nästa '+halloween;
+					selectDefault.innerHTML = 'Standard';
+					selectLanguage.innerHTML = 'Välj';
+					// installBtn.innerHTML = 'Installera';
+					break;
+			default:
+					daysToNext.innerHTML = 'days to next '+halloween;
+					selectDefault.innerHTML = 'Default';
+					selectLanguage.innerHTML = 'Select';
+					// installBtn.innerHTML = 'Install';
+					break;
+		}
+		idle();
+	}
+
+	translate();
 	idle();
 	setInterval(idle, 30000);
 	
@@ -201,4 +204,13 @@ window.onload = function() {
 				});
 		})(languagesLI[i]);
 	}
+	
+	shareFacebook = document.getElementById('share-facebook');
+	shareFacebook.addEventListener('click', function(){
+		window.open('http://www.facebook.com/sharer.php?' +
+					'u='+encodeURIComponent(location.href) +
+					'&t='+encodeURIComponent(document.title),
+					' sharer', 'toolbar=0, status=0, width=626, height=436');
+		return false;
+	});
 }

@@ -4,8 +4,7 @@
 }
 html,
 body {
-  background-color: #333;
-  color: white;
+   color: white;
   font-family: "Diploma", sans-serif;
   font-size: 48px;
   -webkit-transition: font-size 0.4s ease;
@@ -16,12 +15,13 @@ body {
   height: 100%;
 }
 
-body {
-	background: -moz-radial-gradient(transparent, transparent, transparent, transparent, DarkOrange);
-  background: -webkit-radial-gradient(transparent, transparent, transparent, transparent, DarkOrange);
-  background: -o-radial-gradient(transparent, transparent, transparent, transparent, DarkOrange);
-  background: -ms-radial-gradient(transparent, transparent, transparent, transparent, DarkOrange);
-  background: radial-gradient(transparent, transparent, transparent, transparent, DarkOrange);
+body,
+[data-bg="default"]{
+	background: #333 -moz-radial-gradient(transparent, transparent, transparent, transparent, DarkOrange);
+  background: #333 -webkit-radial-gradient(transparent, transparent, transparent, transparent, DarkOrange);
+  background: #333 -o-radial-gradient(transparent, transparent, transparent, transparent, DarkOrange);
+  background: #333 -ms-radial-gradient(transparent, transparent, transparent, transparent, DarkOrange);
+  background: #333 radial-gradient(transparent, transparent, transparent, transparent, DarkOrange);
 }
 
 #maincontainer {
@@ -96,13 +96,25 @@ ul {
   list-style: none;
   padding: 0 0 0 1em;
   margin: 0;
-  font-family: arial;
+  font-family: arial, sans-serif;
   position: absolute;
   width: 5em;
   height: 2em;
   overflow: hidden;
   transition: height 0.4s ease;
 }
+
+#settings {
+	right: 0;
+  text-align: right;
+  padding: 0 1em 0 0;
+}
+
+#settings [data-bg] {
+  width: 100%;
+  height: 100%;
+}
+
 ul:hover,
 ul:target {
 	height: 100%;
@@ -139,3 +151,17 @@ li:hover {
   font-size: 0;
   cursor: pointer;
 }
+
+#share {
+	left: auto;
+  right: 0;
+  padding-left: 0;
+  padding-right: 1em;
+  text-align: right;
+}
+
+#share:hover li:first-child,
+#share:target li:first-child {
+	font-size: inherit;
+}
+
