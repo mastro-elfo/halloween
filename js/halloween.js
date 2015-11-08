@@ -169,6 +169,8 @@ window.onload = function() {
 		}
 	}*/
 	
+	shareFacebook = document.getElementById('share-facebook');
+	
 	setInterval(function(){
 		var width = parseInt(window.innerWidth || document.documentElement.offsetWidth || document.body.offsetWidth || 640);
 		var height = parseInt(window.innerHeight || document.documentElement.offsetHeight || document.body.offsetHeight || 400);
@@ -181,10 +183,10 @@ window.onload = function() {
 		}
 		
 		if (typeof languageSelect.style['font-size'] != 'undefined') {
-				languageSelect.style['font-size'] = (height /languageNo /2) +'px';
+				shareFacebook.style['font-size'] = languageSelect.style['font-size'] = (height /languageNo /2) +'px';
 		}
 		else {
-				languageSelect.style = 'font-size: '+(height /languageNo /2) +'px';
+				shareFacebook.style = languageSelect.style = 'font-size: '+(height /languageNo /2) +'px';
 		}
 		
 		/*if (install) {
@@ -205,7 +207,6 @@ window.onload = function() {
 		})(languagesLI[i]);
 	}
 	
-	shareFacebook = document.getElementById('share-facebook');
 	shareFacebook.addEventListener('click', function(){
 		window.open('http://www.facebook.com/sharer.php?' +
 					'u='+encodeURIComponent(location.href) +
