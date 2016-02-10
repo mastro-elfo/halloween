@@ -30,6 +30,14 @@ window.onload = function() {
 		u.innerHTML = uu;
 		
 		document.title = '' + hh + dd + uu + ' ' + document.getElementById('days-to-next').innerHTML.replace('<em>', '').replace('</em>', '');
+		
+		domtoimage.toPng(document.body)
+			.then(function (dataUrl) {
+				document.getElementById('og-image').setAttribute('content', dataUrl);
+			})
+			.catch(function (error) {
+				console.error('oops, something went wrong!', error);
+			});
 	}
 	
 	function translate(language) {
@@ -144,10 +152,10 @@ window.onload = function() {
 		var height = parseInt(window.innerHeight || document.documentElement.offsetHeight || document.body.offsetHeight || 400);
 		
 		if (typeof document.body.style['font-size'] != 'undefined') {
-			document.body.style['font-size'] = (width /1366 *128)+'px';
+			document.body.style['font-size'] = (width /1366 *150)+'px';
 		}
 		else {
-			document.body.style = 'font-size: '+(width /1366 *128)+'px';
+			document.body.style = 'font-size: '+(width /1366 *150)+'px';
 		}
 		
 		if (typeof languageSelect.style['font-size'] != 'undefined') {
