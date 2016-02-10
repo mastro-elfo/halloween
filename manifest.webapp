@@ -1,6 +1,6 @@
 {
 	"name": "Halloween",
-	"version": "2.4.0",
+	"version": "2.4.1",
 	"description": "How many days to next Halloween?",
 	"launch_path": "/halloween/index.html",
 	"appcache_path": "/halloween/data.appcache",

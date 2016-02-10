@@ -146,6 +146,7 @@ window.onload = function() {
 	var languageNo = languagesLI.length -1;
 	
 	shareFacebook = document.getElementById('share-facebook');
+	var shareUl = document.getElementById('share');
 	
 	setInterval(function(){
 		var width = parseInt(window.innerWidth || document.documentElement.offsetWidth || document.body.offsetWidth || 640);
@@ -159,10 +160,10 @@ window.onload = function() {
 		}
 		
 		if (typeof languageSelect.style['font-size'] != 'undefined') {
-				shareFacebook.style['font-size'] = languageSelect.style['font-size'] = (height /languageNo /2) +'px';
+				shareUl.style['font-size'] = languageSelect.style['font-size'] = (height /languageNo /2) +'px';
 		}
 		else {
-				shareFacebook.style = languageSelect.style = 'font-size: '+(height /languageNo /2) +'px';
+				shareUl.style = languageSelect.style = 'font-size: '+(height /languageNo /2) +'px';
 		}
 	}, 100);
 	
@@ -181,4 +182,48 @@ window.onload = function() {
 					' sharer', 'toolbar=0, status=0, width=626, height=436');
 		return false;
 	});
+	
+	// Install
+	(function(){
+		if ((!navigator.mozApps) || (!navigator.mozApps.getSelf)) {
+			/*-----------------------------------------------------------+
+			|| Test to see if the Mozilla Apps Web Runtime is supported
+			|| HACK: Testing for either mozApps OR mozApps.getSelf is a
+			|| hack.
+			|| This is needed because some pre-beta versions of Firefox
+			|| have the object present but nit fully implemented.
+			|| TODO: Update when Firefox Desktop & Mobile are complete.
+			------------------------------------------------------------*/
+			return;
+		}
+	 
+		var MyAppSelf = navigator.mozApps.getSelf();
+		MyAppSelf.onsuccess = function() {
+			if (! this.result) {
+				// Application is not "installed"
+				var install = document.getElementById('install');
+				install && install.setAttribute('class', '');
+				install && (install.onclick = function() {
+					var installation = navigator.mozApps.install('http://' + location.hostname +'/manifest.webapp');
+					installation.onsuccess = function() {
+						install.setAttribute('class', 'hidden');
+						// alert("K.O. Timer has been successfully installed.....");
+					}
+					installation.onerror = function() {
+						alert("APP: The installation FAILED : " + this.error.name +"\n"+
+							  'http://' + location.hostname +'/manifest.webapp');
+					}
+				});
+			}
+			else {
+				 // This "MozApp" is already installed.
+				 //alert('App is already installed');
+			}
+			return;
+		}
+		MyAppSelf.onerror = function() {
+			//alert('Error checking installation status: ' +this.error.message);
+			return;
+		}
+	})();
 }

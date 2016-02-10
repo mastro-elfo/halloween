@@ -1,6 +1,7 @@
 CACHE MANIFEST
 
-# 2.4.0
+# 2.4.1
+# 1627
 
 CACHE:
 index.html
@@ -15,10 +16,11 @@ img/pumpkin-60.png
 img/pumpkin-32.png
 img/pumpkin-16.png
 
-css/halloween.css
+#css/halloween.css
 css/font.css
 
 js/halloween.js
+js/dom_to_image.js
 
 favicon.ico
 
