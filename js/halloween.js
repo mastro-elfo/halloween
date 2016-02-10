@@ -204,7 +204,7 @@ window.onload = function() {
 				var install = document.getElementById('install');
 				install && install.setAttribute('class', '');
 				install && (install.onclick = function() {
-					var installation = navigator.mozApps.install('http://' + location.hostname +'/manifest.webapp');
+					var installation = navigator.mozApps.install('http://' + location.hostname +'/halloween/manifest.webapp');
 					installation.onsuccess = function() {
 						install.setAttribute('class', 'hidden');
 						// alert("K.O. Timer has been successfully installed.....");
