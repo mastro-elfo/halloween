@@ -1,55 +1,19 @@
 <!DOCTYPE html>
-<html manifest="manifest.appcache">
-	<head>
-		<meta charset="UTF-8"/>
-		<meta name=viewport content="width=device-width, initial-scale=1"/>
-		<link rel="icon shortcut" href="img/pumpkin-32.png"/>
-		<link rel="manifest" href="webapp.json"/>
-		<title>Halloween</title>
-		<meta name="og:url"         property="og:url"           content="http://mastro-elfo.github.io/halloween/" />
-		<meta name="og:type"        property="og:type"          content="website" />
-		<meta name="og:title"       property="og:title"         content="Halloween" />
-		<meta name="og:description" property="og:description"   content="'Halloween' displays how many days there are until next Halloween." />
-		<meta name="og:image"       property="og:image"         content="img/pumpkin-512.png" id="og-image" />
-	</head>
-	<body>
-		<ul id="language-select">
-			<li onlick="location.href = '#language-select';" id="select-open">Select</li>
-			<li data-lang="--" id="select-default">Default</li>
-			<li data-lang="da">Dansk</li>
-			<li data-lang="de">Deutsch</li>
-			<li data-lang="en">English</li>
-			<li data-lang="eo">Esperanto</li>
-			<li data-lang="es">Español</li>
-			<li data-lang="fi">Suomi</li>
-			<li data-lang="fr">Français</li>
-			<li data-lang="gr">ελληνικά</li>
-			<li data-lang="is">íslenska</li>
-			<li data-lang="it">Italiano</li>
-			<li data-lang="nl">Dutch</li>
-			<li data-lang="no">Norsk</li>
-			<li data-lang="ept">Português</li>
-			<li data-lang="ru">pусский</li>
-			<li data-lang="sv">Svensk</li>
-		</ul>
-		<ul id="share">
-			<li id="share-facebook">Share</li>
-			<li id="install" class="hidden">Install</li>
-		</ul>
-		<div id="maincontainer">
-			<div id="loader"></div>
-			<div id="clockcontainer">
-				<div id="h-day">0</div>
-				<div id="d-day">0</div>
-				<div id="u-day">0</div>
-			</div>
-			<p id="days-to-next">
-				days to next <em>Halloween</em>
-			</p>
-		</div>
-	</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halloween</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Manufacturing+Consent&display=swap"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
-<link rel="shortcut icon" type="image/png" href="favicon.ico"/>
-<link rel="stylesheet" href="css/halloween.css"/>
-<script type="text/javascript" src="js/dom_to_image.js"></script>
-<script type="text/javascript" src="js/halloween.js" async="async" defer="defer"></script>
