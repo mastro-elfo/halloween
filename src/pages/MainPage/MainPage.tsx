@@ -91,11 +91,11 @@ function toDays(today: Date) {
   const td = new Date(today);
   td.setHours(0, 0, 0, 0);
   if (td.getMonth() === 9 && td.getDate() === 31) return 0;
-  return (
+  return Math.floor(
     (+new Date(td.getFullYear() + (td.getMonth() > 9 ? 1 : 0), 9, 31) - +td) /
-    1000 /
-    60 /
-    60 /
-    24
+      1000 /
+      60 /
+      60 /
+      24
   );
 }
