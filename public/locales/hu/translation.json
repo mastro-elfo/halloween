@@ -1,6 +1,9 @@
 {
-  "before": "",
-  "days to next Halloween": "nap a következő Halloweenig",
+  "before_one": "",
+  "before_other": "",
+  "days to next Halloween_one": "nap a következő Halloweenig",
+  "days to next Halloween_other": "nap a következő Halloweenig",
+  "Halloween": "Halloweent",
   "Happy Halloween": "Boldog Halloweent!",
   "Language": "Nyelv",
   "Loading": "Loading",

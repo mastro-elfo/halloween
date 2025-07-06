@@ -1,6 +1,9 @@
 {
-  "before": "",
-  "days to next Halloween": "dage til næste",
+  "before_one": "",
+  "before_other": "",
+  "days to next Halloween_one": "dag til næste Halloween",
+  "days to next Halloween_other": "dage til næste Halloween",
+  "Halloween": "Halloween",
   "Happy Halloween": "Glædelig Halloween!",
   "Language": "Sprog",
   "Loading": "Loading",

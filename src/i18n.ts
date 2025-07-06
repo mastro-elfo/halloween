@@ -12,6 +12,11 @@ i18next
   .init({
     backend: {
       backends: [LocalStorageBackend, FetchBackend],
+      backendsOptions: [
+        {
+          expirationTime: Number(import.meta.env.VITE_I18N_EXPIRATIONTIME),
+        },
+      ],
     },
   });
 

@@ -1,6 +1,8 @@
 {
   "before": "Liko",
-  "days to next Halloween": "dienų iki kito Helovino",
+  "days to next Halloween_one": "diena iki kito Helovino",
+  "days to next Halloween_other": "dienų iki kito Helovino",
+  "Halloween": "Helovinu",
   "Happy Halloween": "Su Helovinu!",
   "Language": "Kalba",
   "Loading": "Loading",

@@ -1,6 +1,9 @@
 {
-  "before": "",
-  "days to next Halloween": "dienas līdz nākamajam Helovīnam",
+  "before_one": "",
+  "before_other": "",
+  "days to next Halloween_one": "diena līdz nākamajam Helovīnam",
+  "days to next Halloween_other": "dienas līdz nākamajam Helovīnam",
+  "Halloween": "Helovīnus",
   "Happy Halloween": "Priecīgus Helovīnus!",
   "Language": "Valoda",
   "Loading": "Loading",
