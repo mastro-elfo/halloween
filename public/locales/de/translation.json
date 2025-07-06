@@ -1,6 +1,9 @@
 {
-  "before": "Nur noch",
-  "days to next Halloween": "Tage bis zum nächsten Halloween",
+  "before_one": "",
+  "before_other": "",
+  "days to next Halloween_one": "Tag bis zum nächsten Halloween",
+  "days to next Halloween_other": "Tage bis zum nächsten Halloween",
+  "Halloween": "Halloween",
   "Happy Halloween": "Frohes Halloween!",
   "Language": "Sprache",
   "Loading": "Loading",

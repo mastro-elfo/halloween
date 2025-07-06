@@ -1,7 +1,10 @@
 {
-  "before": "Plus que",
-  "days to next Halloween": "jours avant le prochain Halloween",
-  "Happy Halloween": "Joyeux Halloween !",
+  "before_one": "",
+  "before_other": "",
+  "days to next Halloween_one": "jour avant le prochain Halloween",
+  "days to next Halloween_other": "jours avant le prochain Halloween",
+  "Halloween": "Halloween",
+  "Happy Halloween": "Joyeux Halloween!",
   "Language": "Langue",
   "Loading": "Loading",
   "Select language": "Sélectionnez la langue"

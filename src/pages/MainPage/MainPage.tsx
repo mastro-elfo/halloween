@@ -1,24 +1,12 @@
-import { Language } from "@mui/icons-material";
-import {
-  AppBar,
-  Button,
-  Container,
-  Menu,
-  MenuItem,
-  Stack,
-  Toolbar,
-  Typography,
-} from "@mui/material";
+import { AppBar, Container, Stack, Toolbar, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import BackgroundBox from "../../components/BackgroundBox/BackgroundBox";
 import Countdown from "../../components/Countdown/Countdown";
+import LanguageSelector from "../../components/LanguageSelector/LanguageSelector";
 
 export default function MainPage() {
-  const {
-    t,
-    i18n: { changeLanguage, language },
-  } = useTranslation();
+  const { t } = useTranslation();
   const [today, setToday] = useState(new Date());
   const isHalloween = today.getMonth() === 9 && today.getDate() === 31;
   const days = toDays(today);
@@ -30,27 +18,12 @@ export default function MainPage() {
       clearTimeout(to);
     };
   }, [today]);
-  const [languageAnchor, setLanguageAnchor] = useState<null | HTMLElement>(
-    null
-  );
-
-  const handleSelectLanguage = (lng: string | undefined) => {
-    changeLanguage(lng).finally(() => {
-      setLanguageAnchor(null);
-    });
-  };
 
   return (
     <>
       <AppBar color="transparent" elevation={0}>
         <Toolbar>
-          <Button
-            startIcon={<Language />}
-            title={t("Select language")}
-            onClick={(event) => setLanguageAnchor(event.currentTarget)}
-          >
-            {t("Language")}
-          </Button>
+          <LanguageSelector />
         </Toolbar>
       </AppBar>
       <Container
@@ -70,7 +43,7 @@ export default function MainPage() {
               fontFamily="Manufacturing Consent"
               sx={{ textShadow: "0px 0px 8px rgba(1,0,0,1)" }}
             >
-              {t("before")}
+              {t("before", { count: days })}
             </Typography>
           )}
           {!isHalloween && <Countdown days={days} />}
@@ -80,7 +53,9 @@ export default function MainPage() {
             fontFamily="Manufacturing Consent"
             sx={{ textShadow: "0px 0px 8px rgba(1,0,0,1)" }}
           >
-            {isHalloween ? t("Happy Halloween") : t("days to next Halloween")}
+            {isHalloween
+              ? t("Happy Halloween")
+              : t("days to next Halloween", { count: days })}
           </Typography>
         </Stack>
       </Container>
@@ -90,120 +65,12 @@ export default function MainPage() {
         size="sm"
         opacity={0.25}
       />
-      <Menu
-        anchorEl={languageAnchor}
-        open={!!languageAnchor}
-        onClose={() => setLanguageAnchor(null)}
-      >
-        <MenuItem
-          onClick={() => handleSelectLanguage("da")}
-          selected={language.startsWith("da")}
-        >
-          Dansk
-        </MenuItem>
-        <MenuItem
-          onClick={() => handleSelectLanguage("de")}
-          selected={language.startsWith("de")}
-        >
-          Deutsch
-        </MenuItem>
-        <MenuItem
-          onClick={() => handleSelectLanguage("en")}
-          selected={language.startsWith("en")}
-        >
-          English
-        </MenuItem>
-        <MenuItem
-          onClick={() => handleSelectLanguage("eo")}
-          selected={language.startsWith("eo")}
-        >
-          Esperanto
-        </MenuItem>
-        <MenuItem
-          onClick={() => handleSelectLanguage("es")}
-          selected={language.startsWith("es")}
-        >
-          Español
-        </MenuItem>
-        <MenuItem
-          onClick={() => handleSelectLanguage("et")}
-          selected={language.startsWith("et")}
-        >
-          Eesti
-        </MenuItem>
-        <MenuItem
-          onClick={() => handleSelectLanguage("fi")}
-          selected={language.startsWith("fi")}
-        >
-          Suomi
-        </MenuItem>
-        <MenuItem
-          onClick={() => handleSelectLanguage("fr")}
-          selected={language.startsWith("fr")}
-        >
-          Français
-        </MenuItem>
-        <MenuItem
-          onClick={() => handleSelectLanguage("gr")}
-          selected={language.startsWith("gr")}
-        >
-          ελληνικά
-        </MenuItem>
-        <MenuItem
-          onClick={() => handleSelectLanguage("hu")}
-          selected={language.startsWith("hu")}
-        >
-          Magyar
-        </MenuItem>
-        <MenuItem
-          onClick={() => handleSelectLanguage("is")}
-          selected={language.startsWith("is")}
-        >
-          íslenska
-        </MenuItem>
-        <MenuItem
-          onClick={() => handleSelectLanguage("it")}
-          selected={language.startsWith("it")}
-        >
-          Italiano
-        </MenuItem>
-        <MenuItem
-          onClick={() => handleSelectLanguage("lt")}
-          selected={language.startsWith("lt")}
-        >
-          Lietuvių
-        </MenuItem>
-        <MenuItem
-          onClick={() => handleSelectLanguage("lv")}
-          selected={language.startsWith("lv")}
-        >
-          Latviešu
-        </MenuItem>
-        <MenuItem
-          onClick={() => handleSelectLanguage("nl")}
-          selected={language.startsWith("nl")}
-        >
-          Dutch
-        </MenuItem>
-        <MenuItem
-          onClick={() => handleSelectLanguage("no")}
-          selected={language.startsWith("no")}
-        >
-          Norsk
-        </MenuItem>
-        <MenuItem
-          onClick={() => handleSelectLanguage("pt")}
-          selected={language.startsWith("pt")}
-        >
-          Português
-        </MenuItem>
-        <MenuItem
-          onClick={() => handleSelectLanguage("sv")}
-          selected={language.startsWith("sv")}
-        >
-          Svensk
-        </MenuItem>
-      </Menu>
+      <BackgroundBox
+        image="/undraw_spooky-self_eqcy.svg"
+        position="bottom right"
+        size="sm"
+        opacity={0.25}
+      />
     </>
   );
 }

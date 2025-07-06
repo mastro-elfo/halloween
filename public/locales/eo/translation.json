@@ -1,6 +1,9 @@
 {
-  "before": "",
-  "days to next Halloween": "tagoj ĝis la sekva Haloveno",
+  "before_one": "",
+  "before_other": "",
+  "days to next Halloween_one": "tago ĝis la sekva Haloveno",
+  "days to next Halloween_other": "tagoj ĝis la sekva Haloveno",
+  "Halloween": "Halovenon",
   "Happy Halloween": "Feliĉan Halovenon!",
   "Language": "Lingvo",
   "Loading": "Loading",

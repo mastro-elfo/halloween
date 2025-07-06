@@ -1,6 +1,9 @@
 {
-  "before": "",
-  "days to next Halloween": "dagar til næsta hrekkjavöku",
+  "before_one": "",
+  "before_other": "",
+  "days to next Halloween_one": "dagur til næsta hrekkjavöku",
+  "days to next Halloween_other": "dagar til næsta hrekkjavöku",
+  "Halloween": "Hrekkjavöku",
   "Happy Halloween": "Gleðilega hrekkjavöku!",
   "Language": "Tungumál",
   "Loading": "Loading",
