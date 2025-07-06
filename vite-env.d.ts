@@ -8,7 +8,7 @@ interface ViteTypeOptions {
 
 interface ImportMetaEnv {
   readonly VITE_I18N_EXPIRATIONTIME: string;
-  // more env variables...
+  readonly VITE_VERSION: string;
 }
 
 interface ImportMeta {

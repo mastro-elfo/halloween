@@ -1,4 +1,11 @@
-import { AppBar, Container, Stack, Toolbar, Typography } from "@mui/material";
+import {
+  AppBar,
+  Box,
+  Container,
+  Stack,
+  Toolbar,
+  Typography,
+} from "@mui/material";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import BackgroundBox from "../../components/BackgroundBox/BackgroundBox";
@@ -23,7 +30,12 @@ export default function MainPage() {
     <>
       <AppBar color="transparent" elevation={0}>
         <Toolbar>
-          <LanguageSelector />
+          <Box flex={1}>
+            <LanguageSelector />
+          </Box>
+          <Typography color="primary" variant="body2">
+            {import.meta.env.VITE_VERSION}
+          </Typography>
         </Toolbar>
       </AppBar>
       <Container
