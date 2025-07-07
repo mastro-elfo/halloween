@@ -37,6 +37,12 @@ export default function LanguageSelector() {
         onClose={() => setLanguageAnchor(null)}
       >
         <MenuItem
+          onClick={() => handleSelectLanguage("bs")}
+          selected={language.startsWith("bs")}
+        >
+          Bosanski
+        </MenuItem>
+        <MenuItem
           onClick={() => handleSelectLanguage("da")}
           selected={language.startsWith("da")}
         >
@@ -88,7 +94,13 @@ export default function LanguageSelector() {
           onClick={() => handleSelectLanguage("gr")}
           selected={language.startsWith("gr")}
         >
-          ελληνικά
+          Eλληνικά
+        </MenuItem>
+        <MenuItem
+          onClick={() => handleSelectLanguage("hr")}
+          selected={language.startsWith("hr")}
+        >
+          Hrvatski
         </MenuItem>
         <MenuItem
           onClick={() => handleSelectLanguage("hu")}
@@ -143,6 +155,18 @@ export default function LanguageSelector() {
           selected={language.startsWith("pt")}
         >
           Português
+        </MenuItem>
+        <MenuItem
+          onClick={() => handleSelectLanguage("sl")}
+          selected={language.startsWith("sl")}
+        >
+          Slovenščina
+        </MenuItem>
+        <MenuItem
+          onClick={() => handleSelectLanguage("sq")}
+          selected={language.startsWith("sq")}
+        >
+          Shqipe
         </MenuItem>
         <MenuItem
           onClick={() => handleSelectLanguage("sv")}
