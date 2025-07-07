@@ -16,6 +16,7 @@ export default function MainPage() {
   const { t } = useTranslation();
   const [today, setToday] = useState(new Date());
   const isHalloween = today.getMonth() === 9 && today.getDate() === 31;
+  const isAprilFool = today.getMonth() === 3 && today.getDate() === 1;
   const days = toDays(today);
   useEffect(() => {
     const to = setTimeout(() => {
@@ -47,7 +48,13 @@ export default function MainPage() {
           justifyContent: "center",
         }}
       >
-        <Stack direction="column" alignItems="center">
+        <Stack
+          direction="column"
+          alignItems="center"
+          sx={{
+            transform: isAprilFool ? "rotate(180deg)" : "",
+          }}
+        >
           {!isHalloween && (
             <Typography
               variant="h1"
@@ -63,7 +70,9 @@ export default function MainPage() {
             variant="h1"
             align="center"
             fontFamily="Manufacturing Consent"
-            sx={{ textShadow: "0px 0px 8px rgba(1,0,0,1)" }}
+            sx={{
+              textShadow: "0px 0px 8px rgba(1,0,0,1)",
+            }}
           >
             {isHalloween
               ? t("Happy Halloween")
