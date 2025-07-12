@@ -1,5 +1,11 @@
 import LanguageIcon from "@mui/icons-material/Language";
-import { Button, Menu, MenuItem } from "@mui/material";
+import {
+  Button,
+  ListItemIcon,
+  ListItemText,
+  Menu,
+  MenuItem,
+} from "@mui/material";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -37,142 +43,229 @@ export default function LanguageSelector() {
         onClose={() => setLanguageAnchor(null)}
       >
         <MenuItem
+          onClick={() => handleSelectLanguage("bg")}
+          selected={language.startsWith("bg")}
+        >
+          <ListItemIcon>
+            <span className="fi fi-bg"></span>
+          </ListItemIcon>
+          <ListItemText>български</ListItemText>
+        </MenuItem>
+        <MenuItem
           onClick={() => handleSelectLanguage("bs")}
           selected={language.startsWith("bs")}
         >
-          Bosanski
+          <ListItemIcon>
+            <span className="fi fi-ba"></span>
+          </ListItemIcon>
+          <ListItemText>Bosanski</ListItemText>
         </MenuItem>
         <MenuItem
           onClick={() => handleSelectLanguage("da")}
           selected={language.startsWith("da")}
         >
-          Dansk
+          <ListItemIcon>
+            <span className="fi fi-dk"></span>
+          </ListItemIcon>
+          <ListItemText>Dansk</ListItemText>
         </MenuItem>
         <MenuItem
           onClick={() => handleSelectLanguage("de")}
           selected={language.startsWith("de")}
         >
-          Deutsch
+          <ListItemIcon>
+            <span className="fi fi-de"></span>
+          </ListItemIcon>
+          <ListItemText>Deutsch</ListItemText>
         </MenuItem>
         <MenuItem
           onClick={() => handleSelectLanguage("en")}
           selected={language.startsWith("en")}
         >
-          English
+          <ListItemIcon>
+            <span className="fi fi-gb"></span>
+          </ListItemIcon>
+          <ListItemText>English</ListItemText>
         </MenuItem>
         <MenuItem
           onClick={() => handleSelectLanguage("eo")}
           selected={language.startsWith("eo")}
         >
-          Esperanto
+          <ListItemIcon>
+            <span className="fi fi-xx"></span>
+          </ListItemIcon>
+          <ListItemText>Esperanto</ListItemText>
         </MenuItem>
         <MenuItem
           onClick={() => handleSelectLanguage("es")}
           selected={language.startsWith("es")}
         >
-          Español
+          <ListItemIcon>
+            <span className="fi fi-es"></span>
+          </ListItemIcon>
+          <ListItemText>Español</ListItemText>
         </MenuItem>
         <MenuItem
           onClick={() => handleSelectLanguage("et")}
           selected={language.startsWith("et")}
         >
-          Eesti
+          <ListItemIcon>
+            <span className="fi fi-ee"></span>
+          </ListItemIcon>
+          <ListItemText>Eesti</ListItemText>
         </MenuItem>
         <MenuItem
           onClick={() => handleSelectLanguage("fi")}
           selected={language.startsWith("fi")}
         >
-          Suomi
+          <ListItemIcon>
+            <span className="fi fi-fi"></span>
+          </ListItemIcon>
+          <ListItemText>Suomi</ListItemText>
         </MenuItem>
         <MenuItem
           onClick={() => handleSelectLanguage("fr")}
           selected={language.startsWith("fr")}
         >
-          Français
+          <ListItemIcon>
+            <span className="fi fi-fr"></span>
+          </ListItemIcon>
+          <ListItemText>Français</ListItemText>
         </MenuItem>
         <MenuItem
           onClick={() => handleSelectLanguage("gr")}
           selected={language.startsWith("gr")}
         >
-          Eλληνικά
+          <ListItemIcon>
+            <span className="fi fi-gr"></span>
+          </ListItemIcon>
+          <ListItemText>Eλληνικά</ListItemText>
         </MenuItem>
         <MenuItem
           onClick={() => handleSelectLanguage("hr")}
           selected={language.startsWith("hr")}
         >
-          Hrvatski
+          <ListItemIcon>
+            <span className="fi fi-hr"></span>
+          </ListItemIcon>
+          <ListItemText>Hrvatski</ListItemText>
         </MenuItem>
         <MenuItem
           onClick={() => handleSelectLanguage("hu")}
           selected={language.startsWith("hu")}
         >
-          Magyar
+          <ListItemIcon>
+            <span className="fi fi-hu"></span>
+          </ListItemIcon>
+          <ListItemText>Magyar</ListItemText>
         </MenuItem>
         <MenuItem
           onClick={() => handleSelectLanguage("is")}
           selected={language.startsWith("is")}
         >
-          íslenska
+          <ListItemIcon>
+            <span className="fi fi-is"></span>
+          </ListItemIcon>
+          <ListItemText>íslenska</ListItemText>
         </MenuItem>
         <MenuItem
-          onClick={() => handleSelectLanguage("it")}
           selected={language.startsWith("it")}
+          onClick={() => handleSelectLanguage("it")}
         >
-          Italiano
+          <ListItemIcon>
+            <span className="fi fi-it"></span>
+          </ListItemIcon>
+          <ListItemText>Italiano</ListItemText>
         </MenuItem>
         <MenuItem
           onClick={() => handleSelectLanguage("lt")}
           selected={language.startsWith("lt")}
         >
-          Lietuvių
+          <ListItemIcon>
+            <span className="fi fi-lt"></span>
+          </ListItemIcon>
+          <ListItemText>Lietuvių</ListItemText>
         </MenuItem>
         <MenuItem
           onClick={() => handleSelectLanguage("lv")}
           selected={language.startsWith("lv")}
         >
-          Latviešu
+          <ListItemIcon>
+            <span className="fi fi-lv"></span>
+          </ListItemIcon>
+          <ListItemText>Latviešu</ListItemText>
         </MenuItem>
         <MenuItem
           onClick={() => handleSelectLanguage("nl")}
           selected={language.startsWith("nl")}
         >
-          Dutch
+          <ListItemIcon>
+            <span className="fi fi-nl"></span>
+          </ListItemIcon>
+          <ListItemText>Dutch</ListItemText>
         </MenuItem>
         <MenuItem
           onClick={() => handleSelectLanguage("no")}
           selected={language.startsWith("no")}
         >
-          Norsk
+          <ListItemIcon>
+            <span className="fi fi-no"></span>
+          </ListItemIcon>
+          <ListItemText>Norsk</ListItemText>
         </MenuItem>
         <MenuItem
           onClick={() => handleSelectLanguage("pl")}
           selected={language.startsWith("pl")}
         >
-          Polski
+          <ListItemIcon>
+            <span className="fi fi-pl"></span>
+          </ListItemIcon>
+          <ListItemText>Polski</ListItemText>
         </MenuItem>
         <MenuItem
           onClick={() => handleSelectLanguage("pt")}
           selected={language.startsWith("pt")}
         >
-          Português
+          <ListItemIcon>
+            <span className="fi fi-pt"></span>
+          </ListItemIcon>
+          <ListItemText>Português</ListItemText>
+        </MenuItem>
+        <MenuItem
+          onClick={() => handleSelectLanguage("ro")}
+          selected={language.startsWith("ro")}
+        >
+          <ListItemIcon>
+            <span className="fi fi-ro"></span>
+          </ListItemIcon>
+          <ListItemText>Română</ListItemText>
         </MenuItem>
         <MenuItem
           onClick={() => handleSelectLanguage("sl")}
           selected={language.startsWith("sl")}
         >
-          Slovenščina
+          <ListItemIcon>
+            <span className="fi fi-si"></span>
+          </ListItemIcon>
+          <ListItemText>Slovenščina</ListItemText>
         </MenuItem>
         <MenuItem
           onClick={() => handleSelectLanguage("sq")}
           selected={language.startsWith("sq")}
         >
-          Shqipe
+          <ListItemIcon>
+            <span className="fi fi-al"></span>
+          </ListItemIcon>
+          <ListItemText>Shqipe</ListItemText>
         </MenuItem>
         <MenuItem
           onClick={() => handleSelectLanguage("sv")}
           selected={language.startsWith("sv")}
         >
-          Svensk
+          <ListItemIcon>
+            <span className="fi fi-se"></span>
+          </ListItemIcon>
+          <ListItemText>Svensk</ListItemText>
         </MenuItem>
       </Menu>
     </>
