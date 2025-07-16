@@ -61,6 +61,15 @@ export default function LanguageSelector() {
           <ListItemText>Bosanski</ListItemText>
         </MenuItem>
         <MenuItem
+          onClick={() => handleSelectLanguage("cs")}
+          selected={language.startsWith("cs")}
+        >
+          <ListItemIcon>
+            <span className="fi fi-cz"></span>
+          </ListItemIcon>
+          <ListItemText>čeština</ListItemText>
+        </MenuItem>
+        <MenuItem
           onClick={() => handleSelectLanguage("da")}
           selected={language.startsWith("da")}
         >
@@ -113,15 +122,6 @@ export default function LanguageSelector() {
             <span className="fi fi-ee"></span>
           </ListItemIcon>
           <ListItemText>Eesti</ListItemText>
-        </MenuItem>
-        <MenuItem
-          onClick={() => handleSelectLanguage("fi")}
-          selected={language.startsWith("fi")}
-        >
-          <ListItemIcon>
-            <span className="fi fi-fi"></span>
-          </ListItemIcon>
-          <ListItemText>Suomi</ListItemText>
         </MenuItem>
         <MenuItem
           onClick={() => handleSelectLanguage("fr")}
@@ -250,6 +250,15 @@ export default function LanguageSelector() {
           <ListItemText>Slovenščina</ListItemText>
         </MenuItem>
         <MenuItem
+          onClick={() => handleSelectLanguage("sk")}
+          selected={language.startsWith("sk")}
+        >
+          <ListItemIcon>
+            <span className="fi fi-sk"></span>
+          </ListItemIcon>
+          <ListItemText>Slovenščina</ListItemText>
+        </MenuItem>
+        <MenuItem
           onClick={() => handleSelectLanguage("sq")}
           selected={language.startsWith("sq")}
         >
@@ -257,6 +266,24 @@ export default function LanguageSelector() {
             <span className="fi fi-al"></span>
           </ListItemIcon>
           <ListItemText>Shqipe</ListItemText>
+        </MenuItem>
+        <MenuItem
+          onClick={() => handleSelectLanguage("sr")}
+          selected={language.startsWith("sr")}
+        >
+          <ListItemIcon>
+            <span className="fi fi-rs"></span>
+          </ListItemIcon>
+          <ListItemText>Cрпски</ListItemText>
+        </MenuItem>
+        <MenuItem
+          onClick={() => handleSelectLanguage("fi")}
+          selected={language.startsWith("fi")}
+        >
+          <ListItemIcon>
+            <span className="fi fi-fi"></span>
+          </ListItemIcon>
+          <ListItemText>Suomi</ListItemText>
         </MenuItem>
         <MenuItem
           onClick={() => handleSelectLanguage("sv")}
