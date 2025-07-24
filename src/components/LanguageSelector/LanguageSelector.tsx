@@ -178,6 +178,15 @@ export default function LanguageSelector() {
           <ListItemText>Italiano</ListItemText>
         </MenuItem>
         <MenuItem
+          selected={language.startsWith("kl")}
+          onClick={() => handleSelectLanguage("kl")}
+        >
+          <ListItemIcon>
+            <span className="fi fi-gl"></span>
+          </ListItemIcon>
+          <ListItemText>Kalaallisut</ListItemText>
+        </MenuItem>
+        <MenuItem
           onClick={() => handleSelectLanguage("lt")}
           selected={language.startsWith("lt")}
         >
