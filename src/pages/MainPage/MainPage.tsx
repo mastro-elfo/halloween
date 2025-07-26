@@ -1,23 +1,21 @@
-import {
-  AppBar,
-  Box,
-  Container,
-  Stack,
-  Toolbar,
-  Typography,
-} from "@mui/material";
+import { AppBar, Box, Container, Toolbar, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import BackgroundBox from "../../components/BackgroundBox/BackgroundBox";
-import Countdown from "../../components/Countdown/Countdown";
 import LanguageSelector from "../../components/LanguageSelector/LanguageSelector";
+import MainContent from "./MainContent";
 
 export default function MainPage() {
   const { t } = useTranslation();
   const [today, setToday] = useState(new Date());
+  const [rotation, setRotation] = useState(0);
+
   const isHalloween = today.getMonth() === 9 && today.getDate() === 31;
   const isAprilFool = today.getMonth() === 3 && today.getDate() === 1;
+  const isMorseDay = today.getMonth() === 3 && today.getDate() === 27;
+
   const days = toDays(today);
+
   useEffect(() => {
     const to = setTimeout(() => {
       setToday(new Date());
@@ -26,6 +24,23 @@ export default function MainPage() {
       clearTimeout(to);
     };
   }, [today]);
+
+  useEffect(() => {
+    const callback = (event: MouseEvent) => {
+      if (isAprilFool) {
+        const cx = window.innerWidth;
+        const cy = window.innerHeight;
+        const mx = event.pageX;
+        const my = event.pageY;
+        const r = Math.abs(cx + cy - mx - my);
+        setRotation(r);
+      }
+    };
+    document.addEventListener("mousemove", callback);
+    return () => {
+      document.removeEventListener("mousemove", callback);
+    };
+  }, [isAprilFool]);
 
   return (
     <>
@@ -45,40 +60,28 @@ export default function MainPage() {
           display: "flex",
           flexDirection: "column",
           height: "100vh",
-          justifyContent: "center",
+          justifyContent: { xs: "flex-start", sm: "center" },
         }}
       >
-        <Stack
-          direction="column"
-          alignItems="center"
-          sx={{
-            transform: isAprilFool ? "rotate(180deg)" : "",
-          }}
-        >
-          {!isHalloween && (
-            <Typography
-              variant="h1"
-              align="center"
-              fontFamily="Manufacturing Consent"
-              sx={{ textShadow: "0px 0px 8px rgba(1,0,0,1)" }}
-            >
-              {t("before", { count: days })}
-            </Typography>
-          )}
-          {!isHalloween && <Countdown days={days} />}
-          <Typography
-            variant="h1"
-            align="center"
-            fontFamily="Manufacturing Consent"
-            sx={{
-              textShadow: "0px 0px 8px rgba(1,0,0,1)",
-            }}
-          >
-            {isHalloween
+        <MainContent
+          days={days}
+          after={
+            isHalloween
               ? t("Happy Halloween")
-              : t("days to next Halloween", { count: days })}
-          </Typography>
-        </Stack>
+              : t("days to next Halloween", {
+                  count: days,
+                  context: isMorseDay ? "morse" : "",
+                })
+          }
+          before={t("before", {
+            count: days,
+            context: isMorseDay ? "morse" : "",
+          })}
+          sx={{
+            transform: `rotate(${rotation}deg)`,
+            transition: "transform linear 0.1s",
+          }}
+        />
       </Container>
       <BackgroundBox
         image="/undraw_halloween_q1b1.svg"
