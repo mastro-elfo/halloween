@@ -16,6 +16,9 @@ i18next
         {
           expirationTime: Number(import.meta.env.VITE_I18N_EXPIRATIONTIME),
         },
+        {
+          loadPath: "/halloween/locales/{{lng}}/{{ns}}.json",
+        },
       ],
     },
   });
