@@ -3,8 +3,7 @@ name: Deploy static content to Pages
 on:
   push:
     branches:
-      # TODO: set main
-      - none
+      - main
     paths-ignore:
       - ".github/workflows/*"
 
