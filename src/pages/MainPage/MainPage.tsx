@@ -84,13 +84,13 @@ export default function MainPage() {
         />
       </Container>
       <BackgroundBox
-        image="/undraw_halloween_q1b1.svg"
+        image="/halloween/undraw_halloween_q1b1.svg"
         position="bottom left"
         size="sm"
         opacity={0.25}
       />
       <BackgroundBox
-        image="/undraw_spooky-self_eqcy.svg"
+        image="/halloween/undraw_spooky-self_eqcy.svg"
         position="bottom right"
         size="sm"
         opacity={0.25}
