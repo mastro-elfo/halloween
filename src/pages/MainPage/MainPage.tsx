@@ -60,7 +60,7 @@ export default function MainPage() {
           display: "flex",
           flexDirection: "column",
           height: "100vh",
-          justifyContent: { xs: "flex-start", sm: "center" },
+          justifyContent: "center",
         }}
       >
         <MainContent
