@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import BackgroundBox from "../../components/BackgroundBox/BackgroundBox";
 import LanguageSelector from "../../components/LanguageSelector/LanguageSelector";
+import ShareThePage from "../../components/ShareThePage/ShareThePage";
 import MainContent from "./MainContent";
 
 export default function MainPage() {
@@ -48,6 +49,7 @@ export default function MainPage() {
         <Toolbar>
           <Box flex={1}>
             <LanguageSelector />
+            <ShareThePage />
           </Box>
           <Typography color="primary" variant="body2">
             {import.meta.env.VITE_VERSION}

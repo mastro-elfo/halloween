@@ -1,11 +1,17 @@
 {
   "before_one": "",
   "before_other": "",
+  "Close": "Close",
+  "Copied to clipboard": "Copied to clipboard",
+  "Copy": "Copy",
   "days to next Halloween_one": "day to next Halloween",
   "days to next Halloween_other": "days to next Halloween",
   "Halloween": "Halloween",
   "Happy Halloween": "Happy Halloween!",
   "Language": "Language",
   "Loading": "Loading",
-  "Select language": "Select language"
+  "QRCode to share this page location": "QRCode to share this page location",
+  "Select language": "Select language",
+  "Share": "Share",
+  "Share this page": "Share this page 📣"
 }

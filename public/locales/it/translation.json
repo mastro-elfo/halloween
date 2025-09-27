@@ -1,6 +1,9 @@
 {
   "before_one": "",
   "before_other": "",
+  "Close": "Chiudi",
+  "Copied to clipboard": "Copiato negli appunti",
+  "Copy": "Copia",
   "days to next Halloween_one": "giorno al prossimo Halloween",
   "days to next Halloween_other": "giorni al prossimo Halloween",
   "days to next Halloween_morse_other": "--. .. --- .-. -. .. / .- .-.. / .--. .-. --- ... ... .. -- --- / .... .- .-.. .-.. --- .-- . . -.",
@@ -8,5 +11,8 @@
   "Happy Halloween": "Felice Halloween!",
   "Language": "Lingua",
   "Loading": "Caricamento",
-  "Select language": "Seleziona lingua"
+  "QRCode to share this page location": "QRCode per condividere questa pagina",
+  "Select language": "Seleziona lingua",
+  "Share": "Condividi",
+  "Share this page": "Condividi questa pagina 📣"
 }
