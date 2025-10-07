@@ -15,6 +15,7 @@ i18next
       backendOptions: [
         {
           expirationTime: Number(import.meta.env.VITE_I18N_EXPIRATIONTIME),
+          prefix: "halloween_",
         },
         {
           loadPath: "/halloween/locales/{{lng}}/{{ns}}.json",
