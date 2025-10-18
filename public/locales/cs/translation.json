@@ -1,11 +1,17 @@
 {
   "before_one": "",
   "before_other": "",
-  "days to next Halloween_one": "den do dalšího Halloweenu",
-  "days to next Halloween_other": "dny do dalšího Halloweenu",
+  "Close": "Zavřít",
+  "Copied to clipboard": "Zkopírováno do schránky",
+  "Copy": "Kopírovat",
+  "days to next Halloween_one": "den do příštího Halloweenu",
+  "days to next Halloween_other": "dní do příštího Halloweenu",
   "Halloween": "Halloween",
   "Happy Halloween": "Šťastný Halloween!",
   "Language": "Jazyk",
   "Loading": "Načítání",
-  "Select language": "Vyberte jazyk"
+  "QRCode to share this page location": "QR kód pro sdílení umístění této stránky",
+  "Select language": "Vyberte jazyk",
+  "Share": "Sdílet",
+  "Share this page": "Sdílejte tuto stránku 📣"
 }

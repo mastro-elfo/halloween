@@ -1,11 +1,17 @@
 {
   "before_one": "",
   "before_other": "",
-  "days to next Halloween_one": "dana do sljedećeg Noći vještica",
-  "days to next Halloween_other": "dan do sljedećeg Noći vještica",
+  "Close": "Zatvori",
+  "Copied to clipboard": "Kopirano u međuspremnik",
+  "Copy": "Kopiraj",
+  "days to next Halloween_one": "dan do sljedećeg Noći vještica",
+  "days to next Halloween_other": "dana do sljedećeg Noći vještica",
   "Halloween": "Noć vještica",
-  "Happy Halloween": "Sretan Noć vještica!",
+  "Happy Halloween": "Sretna Noć vještica!",
   "Language": "Jezik",
   "Loading": "Učitavanje",
-  "Select language": "Odaberite jezik"
+  "QRCode to share this page location": "QR kod za dijeljenje lokacije ove stranice",
+  "Select language": "Odaberite jezik",
+  "Share": "Podijeli",
+  "Share this page": "Podijeli ovu stranicu 📣"
 }
