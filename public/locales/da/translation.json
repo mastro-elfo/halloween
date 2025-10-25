@@ -1,11 +1,17 @@
 {
   "before_one": "",
   "before_other": "",
+  "Close": "Luk",
+  "Copied to clipboard": "Kopieret til udklipsholderen",
+  "Copy": "Kopiér",
   "days to next Halloween_one": "dag til næste Halloween",
   "days to next Halloween_other": "dage til næste Halloween",
   "Halloween": "Halloween",
   "Happy Halloween": "Glædelig Halloween!",
   "Language": "Sprog",
-  "Loading": "Loading",
-  "Select language": "Vælg sprog"
+  "Loading": "Indlæser",
+  "QRCode to share this page location": "QR-kode til at dele denne sides placering",
+  "Select language": "Vælg sprog",
+  "Share": "Del",
+  "Share this page": "Del denne side 📣"
 }
