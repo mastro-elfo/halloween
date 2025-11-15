@@ -1,11 +1,17 @@
 {
   "before_one": "",
   "before_other": "",
-  "days to next Halloween_one": "tago ĝis la sekva Haloveno",
-  "days to next Halloween_other": "tagoj ĝis la sekva Haloveno",
-  "Halloween": "Halovenon",
+  "Close": "Fermi",
+  "Copied to clipboard": "Kopiita al tondujo",
+  "Copy": "Kopii",
+  "days to next Halloween_one": "tago ĝis la venonta Halloween",
+  "days to next Halloween_other": "tagoj ĝis la venonta Halloween",
+  "Halloween": "Haloveno",
   "Happy Halloween": "Feliĉan Halovenon!",
   "Language": "Lingvo",
-  "Loading": "Loading",
-  "Select language": "Elektu lingvon"
+  "Loading": "Ŝargante",
+  "QRCode to share this page location": "QR-kodo por kundividi la lokon de ĉi tiu paĝo",
+  "Select language": "Elektu lingvon",
+  "Share": "Kundividi",
+  "Share this page": "Kundividi ĉi tiun paĝon 📣"
 }

@@ -1,11 +1,17 @@
 {
   "before_one": "",
   "before_other": "",
+  "Close": "Fermer",
+  "Copied to clipboard": "Copié dans le presse-papiers",
+  "Copy": "Copier",
   "days to next Halloween_one": "jour avant le prochain Halloween",
   "days to next Halloween_other": "jours avant le prochain Halloween",
   "Halloween": "Halloween",
-  "Happy Halloween": "Joyeux Halloween!",
+  "Happy Halloween": "Joyeux Halloween !",
   "Language": "Langue",
-  "Loading": "Loading",
-  "Select language": "Sélectionnez la langue"
+  "Loading": "Chargement",
+  "QRCode to share this page location": "QR Code pour partager l’emplacement de cette page",
+  "Select language": "Sélectionner la langue",
+  "Share": "Partager",
+  "Share this page": "Partager cette page 📣"
 }

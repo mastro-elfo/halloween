@@ -1,11 +1,17 @@
 {
   "before_one": "",
   "before_other": "",
-  "days to next Halloween_one": "päivä seuraavaan halloweeniin",
-  "days to next Halloween_other": "päivää seuraavaan halloweeniin",
-  "Halloween": "halloweenia",
-  "Happy Halloween": "Hyvää halloweenia!",
+  "Close": "Sulje",
+  "Copied to clipboard": "Kopioitu leikepöydälle",
+  "Copy": "Kopioi",
+  "days to next Halloween_one": "päivä seuraavaan Halloweeniin",
+  "days to next Halloween_other": "päivää seuraavaan Halloweeniin",
+  "Halloween": "Halloween",
+  "Happy Halloween": "Hyvää Halloweenia!",
   "Language": "Kieli",
-  "Loading": "Loading",
-  "Select language": "Valitse kieli"
+  "Loading": "Ladataan",
+  "QRCode to share this page location": "QR-koodi tämän sivun sijainnin jakamiseen",
+  "Select language": "Valitse kieli",
+  "Share": "Jaa",
+  "Share this page": "Jaa tämä sivu 📣"
 }

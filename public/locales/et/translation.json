@@ -1,11 +1,17 @@
 {
   "before_one": "",
   "before_other": "",
-  "days to next Halloween_one": "päev järgmise halloweenini",
-  "days to next Halloween_other": "päeva järgmise halloweenini",
-  "Halloween": "halloweeni",
-  "Happy Halloween": "Head halloweeni!",
+  "Close": "Sulge",
+  "Copied to clipboard": "Kopeeritud lõikelauale",
+  "Copy": "Kopeeri",
+  "days to next Halloween_one": "päev järgmise Halloweeni alguseni",
+  "days to next Halloween_other": "päeva järgmise Halloweeni alguseni",
+  "Halloween": "Halloween",
+  "Happy Halloween": "Head Halloweeni!",
   "Language": "Keel",
-  "Loading": "Loading",
-  "Select language": "Vali keel"
+  "Loading": "Laadimine",
+  "QRCode to share this page location": "QR-kood selle lehe asukoha jagamiseks",
+  "Select language": "Vali keel",
+  "Share": "Jaga",
+  "Share this page": "Jaga seda lehte 📣"
 }
