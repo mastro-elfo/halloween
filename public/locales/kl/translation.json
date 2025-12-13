@@ -1,11 +1,17 @@
 {
   "before_one": "",
   "before_other": "",
-  "days to next Halloween_one": "ulloq Halloween-ip tulliani",
-  "days to next Halloween_other": "ullut Halloweenip tulliani",
+  "Close": "Luk",
+  "Copied to clipboard": "Udklipsholderimut kopi-it",
+  "Copy": "Kopi",
+  "days to next Halloween_one": "Halloweenip tullianut ullup ataatsip kingorna",
+  "days to next Halloween_other": "Halloweenip tullianut ullut",
   "Halloween": "Halloween",
-  "Happy Halloween": "Halloween-imik pilluarit!",
+  "Happy Halloween": "Halloween pilluarit!",
   "Language": "Oqaatsit",
-  "Loading": "Ilanngussaq",
-  "Select language": "Oqaatsit toqqarlugit"
+  "Loading": "Loadiartoq",
+  "QRCode to share this page location": "QR-kode atorlugu quppernerup sumiiffianik avitseqatigiinneq",
+  "Select language": "Oqaatsit toqqaruk",
+  "Share": "Avitseqatigiinneq",
+  "Share this page": "Qupperneq una avitseqatigiuk 📣"
 }

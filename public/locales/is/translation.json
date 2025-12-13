@@ -1,11 +1,17 @@
 {
   "before_one": "",
   "before_other": "",
-  "days to next Halloween_one": "dagur til næsta hrekkjavöku",
-  "days to next Halloween_other": "dagar til næsta hrekkjavöku",
-  "Halloween": "Hrekkjavöku",
+  "Close": "Loka",
+  "Copied to clipboard": "Afritað á klippiborð",
+  "Copy": "Afrita",
+  "days to next Halloween_one": "dagur til næstu hrekkjavöku",
+  "days to next Halloween_other": "dagar til næstu hrekkjavöku",
+  "Halloween": "Hrekkjavaka",
   "Happy Halloween": "Gleðilega hrekkjavöku!",
   "Language": "Tungumál",
-  "Loading": "Loading",
-  "Select language": "Veldu tungumál"
+  "Loading": "Hleðsla",
+  "QRCode to share this page location": "QR-kóði til að deila staðsetningu þessarar síðu",
+  "Select language": "Veldu tungumál",
+  "Share": "Deila",
+  "Share this page": "Deildu þessari síðu 📣"
 }

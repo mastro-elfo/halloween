@@ -1,10 +1,17 @@
 {
-  "before": "Liko",
+  "before_one": "",
+  "before_other": "",
+  "Close": "Uždaryti",
+  "Copied to clipboard": "Nukopijuota į iškarpinę",
+  "Copy": "Kopijuoti",
   "days to next Halloween_one": "diena iki kito Helovino",
-  "days to next Halloween_other": "dienų iki kito Helovino",
-  "Halloween": "Helovinu",
+  "days to next Halloween_other": "dienos iki kito Helovino",
+  "Halloween": "Helovinas",
   "Happy Halloween": "Su Helovinu!",
   "Language": "Kalba",
-  "Loading": "Loading",
-  "Select language": "Pasirinkite kalbą"
+  "Loading": "Įkeliama",
+  "QRCode to share this page location": "QR kodas šio puslapio vietai bendrinti",
+  "Select language": "Pasirinkti kalbą",
+  "Share": "Bendrinti",
+  "Share this page": "Bendrinti šį puslapį 📣"
 }

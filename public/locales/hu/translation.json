@@ -1,11 +1,17 @@
 {
   "before_one": "",
   "before_other": "",
+  "Close": "Bezárás",
+  "Copied to clipboard": "Vágólapra másolva",
+  "Copy": "Másolás",
   "days to next Halloween_one": "nap a következő Halloweenig",
   "days to next Halloween_other": "nap a következő Halloweenig",
-  "Halloween": "Halloweent",
+  "Halloween": "Halloween",
   "Happy Halloween": "Boldog Halloweent!",
   "Language": "Nyelv",
-  "Loading": "Loading",
-  "Select language": "Válassz nyelvet"
+  "Loading": "Betöltés",
+  "QRCode to share this page location": "QR-kód az oldal helyének megosztásához",
+  "Select language": "Nyelv kiválasztása",
+  "Share": "Megosztás",
+  "Share this page": "Oszd meg ezt az oldalt 📣"
 }
