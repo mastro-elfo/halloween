@@ -6,7 +6,7 @@ import {
   Menu,
   MenuItem,
 } from "@mui/material";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 export default function LanguageSelector() {
@@ -15,7 +15,7 @@ export default function LanguageSelector() {
     i18n: { changeLanguage, language },
   } = useTranslation();
   const [languageAnchor, setLanguageAnchor] = useState<null | HTMLElement>(
-    null
+    null,
   );
   const [loading, setLoading] = useState(false);
 
@@ -26,6 +26,11 @@ export default function LanguageSelector() {
       setLoading(false);
     });
   };
+
+  useEffect(() => {
+    // TODO: will be removed in the future
+    if (language === "gr") changeLanguage("el");
+  }, [language, changeLanguage]);
 
   return (
     <>
@@ -133,8 +138,8 @@ export default function LanguageSelector() {
           <ListItemText>Français</ListItemText>
         </MenuItem>
         <MenuItem
-          onClick={() => handleSelectLanguage("gr")}
-          selected={language.startsWith("gr")}
+          onClick={() => handleSelectLanguage("el")}
+          selected={language.startsWith("el")}
         >
           <ListItemIcon>
             <span className="fi fi-gr"></span>
