@@ -1,11 +1,17 @@
 {
   "before_one": "",
   "before_other": "",
-  "days to next Halloween_one": "dag til neste Halloween",
-  "days to next Halloween_other": "dager til neste Halloween",
+  "Close": "Lukk",
+  "Copied to clipboard": "Kopiert til utklippstavlen",
+  "Copy": "Kopier",
+  "days to next Halloween_one": "dag til Halloween",
+  "days to next Halloween_other": "dager til Halloween",
   "Halloween": "Halloween",
   "Happy Halloween": "God Halloween!",
   "Language": "Språk",
-  "Loading": "Loading",
-  "Select language": "Velg språk"
+  "Loading": "Laster",
+  "QRCode to share this page location": "QR-kode for å dele denne sidens plassering",
+  "Select language": "Velg språk",
+  "Share": "Del",
+  "Share this page": "Del denne siden 📣"
 }

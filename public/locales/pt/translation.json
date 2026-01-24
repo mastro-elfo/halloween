@@ -1,11 +1,17 @@
 {
-  "before_one": "Falta",
-  "before_other": "Faltam",
-  "days to next Halloween_one": "dia para o próximo Halloween",
-  "days to next Halloween_other": "dias para o próximo Halloween",
+  "before_one": "",
+  "before_other": "",
+  "Close": "Fechar",
+  "Copied to clipboard": "Copiado para a área de transferência",
+  "Copy": "Copiar",
+  "days to next Halloween_one": "dia até o Halloween",
+  "days to next Halloween_other": "dias até o Halloween",
   "Halloween": "Halloween",
   "Happy Halloween": "Feliz Halloween!",
   "Language": "Idioma",
-  "Loading": "Loading",
-  "Select language": "Selecione o idioma"
+  "Loading": "A carregar",
+  "QRCode to share this page location": "Código QR para partilhar a localização desta página",
+  "Select language": "Selecionar idioma",
+  "Share": "Partilhar",
+  "Share this page": "Partilhar esta página 📣"
 }

@@ -1,10 +1,17 @@
 {
-  "before": "Nog",
+  "before_one": "",
+  "before_other": "",
+  "Close": "Sluiten",
+  "Copied to clipboard": "Gekopieerd naar klembord",
+  "Copy": "Kopiëren",
   "days to next Halloween_one": "dag tot Halloween",
   "days to next Halloween_other": "dagen tot Halloween",
   "Halloween": "Halloween",
   "Happy Halloween": "Fijne Halloween!",
   "Language": "Taal",
-  "Loading": "Loading",
-  "Select language": "Taal selecteren"
+  "Loading": "Laden",
+  "QRCode to share this page location": "QR-code om de locatie van deze pagina te delen",
+  "Select language": "Selecteer taal",
+  "Share": "Delen",
+  "Share this page": "Deze pagina delen 📣"
 }

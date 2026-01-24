@@ -1,11 +1,18 @@
 {
   "before_one": "",
   "before_other": "",
-  "days to next Halloween_one": "diena līdz nākamajam Helovīnam",
-  "days to next Halloween_other": "dienas līdz nākamajam Helovīnam",
-  "Halloween": "Helovīnus",
-  "Happy Halloween": "Priecīgus Helovīnus!",
+  "Close": "Aizvērt",
+  "Copied to clipboard": "Nokopēts starpliktuvē",
+  "Copy": "Kopēt",
+  "days to next Halloween_zero": "dienas līdz Helovīnam",
+  "days to next Halloween_one": "diena līdz Helovīnam",
+  "days to next Halloween_other": "dienas līdz Helovīnam",
+  "Halloween": "Helovīns",
+  "Happy Halloween": "Priecīgu Helovīnu!",
   "Language": "Valoda",
-  "Loading": "Loading",
-  "Select language": "Izvēlieties valodu"
+  "Loading": "Ielādējas",
+  "QRCode to share this page location": "QR kods, lai kopīgotu šīs lapas atrašanās vietu",
+  "Select language": "Izvēlēties valodu",
+  "Share": "Kopīgot",
+  "Share this page": "Kopīgot šo lapu 📣"
 }
