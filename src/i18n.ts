@@ -23,6 +23,7 @@ i18next
       ],
     },
     fallbackLng: import.meta.env.VITE_I18N_FALLBACKLANGUAGE,
+    debug: import.meta.env.VITE_I18N_DEBUG === "true",
   });
 
 export default i18next;

@@ -7,6 +7,7 @@ interface ViteTypeOptions {
 }
 
 interface ImportMetaEnv {
+  readonly VITE_I18N_DEBUG: string;
   readonly VITE_I18N_EXPIRATIONTIME: string;
   readonly VITE_I18N_FALLBACKLANGUAGE: string;
   readonly VITE_VERSION: string;
