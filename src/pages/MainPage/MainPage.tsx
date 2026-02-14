@@ -1,9 +1,9 @@
 import { AppBar, Box, Container, Toolbar, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import BackgroundBox from "../../components/BackgroundBox/BackgroundBox";
 import LanguageSelector from "../../components/LanguageSelector/LanguageSelector";
 import ShareThePage from "../../components/ShareThePage/ShareThePage";
+import MainBackground from "./MainBackground";
 import MainContent from "./MainContent";
 
 export default function MainPage() {
@@ -18,9 +18,20 @@ export default function MainPage() {
   const days = toDays(today);
 
   useEffect(() => {
-    const to = setTimeout(() => {
-      setToday(new Date());
-    }, +new Date(today.getFullYear(), today.getMonth(), today.getDate() + 1, 0, 0, 0, 0) - +today);
+    const to = setTimeout(
+      () => {
+        setToday(new Date());
+      },
+      +new Date(
+        today.getFullYear(),
+        today.getMonth(),
+        today.getDate() + 1,
+        0,
+        0,
+        0,
+        0,
+      ) - +today,
+    );
     return () => {
       clearTimeout(to);
     };
@@ -63,6 +74,7 @@ export default function MainPage() {
           flexDirection: "column",
           height: "100vh",
           justifyContent: "center",
+          zIndex: 1,
         }}
       >
         <MainContent
@@ -85,18 +97,7 @@ export default function MainPage() {
           }}
         />
       </Container>
-      <BackgroundBox
-        image="/halloween/undraw_halloween_q1b1.svg"
-        position="bottom left"
-        size="sm"
-        opacity={0.25}
-      />
-      <BackgroundBox
-        image="/halloween/undraw_spooky-self_eqcy.svg"
-        position="bottom right"
-        size="sm"
-        opacity={0.25}
-      />
+      <MainBackground />
     </>
   );
 }
@@ -110,6 +111,6 @@ function toDays(today: Date) {
       1000 /
       60 /
       60 /
-      24
+      24,
   );
 }
