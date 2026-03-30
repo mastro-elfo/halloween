@@ -1,11 +1,18 @@
 {
   "before_one": "",
   "before_other": "",
+  "Close": "Închide",
+  "Copied to clipboard": "Copiat în clipboard",
+  "Copy": "Copiază",
   "days to next Halloween_one": "zi până la următorul Halloween",
-  "days to next Halloween_other": "zile până la următorul Halloween",
+  "days to next Halloween_few": "zile până la următorul Halloween",
+  "days to next Halloween_other": "de zile până la următorul Halloween",
   "Halloween": "Halloween",
   "Happy Halloween": "Halloween fericit!",
   "Language": "Limbă",
   "Loading": "Se încarcă",
-  "Select language": "Selectează limba"
+  "QRCode to share this page location": "Cod QR pentru a partaja locația acestei pagini",
+  "Select language": "Selectează limba",
+  "Share": "Partajează",
+  "Share this page": "Partajează această pagină 📣"
 }
